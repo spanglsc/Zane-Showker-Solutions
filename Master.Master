@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="WBLWebsite.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+       <!-- <link rel="stylesheet" type="text/css" href="\StyleSheets\Style.css"/>-->
+        <link rel="stylesheet" type="text/css" href="\StyleSheets\custom.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="http://wblinc.org/wp-content/uploads/2014/01/WBL_favicon.png"/>
+        <script src="\scripts\JavaScript.js" type="text/Javascript"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <body>
+    <div id="MasterHeader">
+  	<div class="row">
+		<div class="header">
+			<div class="row header-row top-row">
+				<div class="logo-section">
+					<a href="Login.html"><img id="logo" src="/WBL.png" alt="Words Beats Life logo" /></a>
+				</div>
+				<div class="welcome-section">
+					<h5>Welcome, User</h5>
+				</div>
+			</div>
+			<div class="row header-row bottom-row">
+
+			</div>
+		</div><!-- logo column -->
+	</div>
+</div>
+<div class="container side-nav-container col-md-2">
+	<div class="row gray">
+		<div class="leftCol">             	
+			<div class="well"> 
+				<ul class="nav nav-pills nav-stacked" id="sidebar">
+					<li class="active"><a href="#">Home</a></li>
+					<li role="presentation"><a href="/UserPages/MyAccount.aspx">My Profile</a></li>
+					<li role="presentation"><a href="/Students/Portfolio.aspx">Portfolio</a></li>
+					<li role="presentation"><a href="#">Forums</a></li>
+					<li role="presentation"><a href="#">Classes</a></li>
+					<li role="presentation"><a href="#">Events</a></li> 
+				</ul>
+			</div>
+		</div>
+    </div>
+</div>
+        <asp:ContentPlaceHolder ID="Main" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="AsideRight" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</body>
+</html>
